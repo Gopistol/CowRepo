@@ -1,0 +1,667 @@
+body {
+  margin: 0;
+  font-family: 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, 'NotoSansKR', sans-serif;
+}
+
+header{
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  box-shadow: rgb(0 0 0 / 8%) 0px 1px 6px;
+  z-index: 1000;
+}
+
+.HeaderWrapper{
+  margin-top: 10px;
+  padding: 0px 20px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 105px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.HeaderUpperLayout{
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 48px;
+  max-height: 72px;
+  max-width: 1160px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.LogoWrapper {
+  display: flex;
+  width: 132px;
+  height: 35px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.LogoWrapper img {
+  max-width: 135px;
+}
+
+.StatusWrapper{
+  display: inline-flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProjectUploadButton{
+  padding: 16px;
+  display: inline-flex;
+  width: auto;
+  font-size: 12px;
+  line-height: 28px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.UserButtonWrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.UserButton{
+  margin-left: 10px;
+  position: relative;
+  padding: 16px;
+  display: inline-flex;
+  width: auto;
+  min-width: 30px;
+  max-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(223, 223, 223);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.UserIcon{
+  overflow: hidden;
+  padding-top: 3px;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  color: rgb(25, 25, 25);
+  font-size: 12px;
+  line-height: 28px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(223, 223, 223);
+  box-sizing: border-box;
+  border-radius: 24px;
+  font-weight: bold;
+  background: rgb(217, 217, 217);
+}
+
+.LoginText{
+  margin-left: 10px;
+  display: inline-flex;
+  color: rgb(25, 25, 25);
+  font-size: 12px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+nav{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 56px;
+}
+
+
+.BarWrapper{
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1160px;
+  min-height: 56px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.BarWrapper.fixed {
+  position: fixed;
+  top:0px;
+  left:0px;
+
+}
+
+.Menu{
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 56px;
+  align-items: center;
+}
+
+.Category{
+  padding: 0px 6px;
+  min-height: 56px;
+  position: relative;
+  margin-right: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 24px;
+  cursor: pointer;
+  font-weight: 600;
+  
+}
+
+
+
+.CategoryIcon{
+  position: relative;
+  display: inline-flex;
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 24px;
+  max-height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home{
+  padding: 0px 6px;
+  min-height: 56px;
+  position: relative;
+  margin-right: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 24px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#menu:hover{
+  color: orangered;
+}
+
+.Popular{
+  padding: 0px 6px;
+  min-height: 56px;
+  position: relative;
+  margin-right: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 24px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.PopularShow {
+    background-color: rgb(242, 242, 242);
+    border-color: gray;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    width: 233px;
+    border-style: hidden;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.015em;
+}
+.PopularShow:hover {
+  color: rgb(61, 61, 61);
+  background: rgb(207, 205, 205);
+}
+
+.New{
+  padding: 0px 6px;
+  min-height: 56px;
+  position: relative;
+  margin-right: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 24px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.End{
+  padding: 0px 6px;
+  min-height: 56px;
+  position: relative;
+  margin-right: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 24px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.Soon{
+  padding: 0px 6px;
+  min-height: 56px;
+  position: relative;
+  margin-right: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 24px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.SearchBox{
+  position: relative;
+  padding: 0px 30px 0px 16px;
+  display: inline-flex;
+  width: 260px;
+  height: 36px;
+  background: rgb(243, 243, 243);
+  align-items: center;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.InputBox{
+  border: none;
+  font-size: 12px;
+  line-height: 28px;
+  background: rgb(243, 243, 243);
+}
+
+.SearchButton{
+  position: absolute;
+  right: 10px;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.notable {
+  position: absolute;
+  left: 350px;
+  width: 50%;
+  top:480px;
+}
+
+@media screen and (max-width:1024px){
+  .notable {
+    position: relative;
+    
+    width: 50%;
+    top:480px;
+  }
+
+}
+.notable .title {
+  display: flex;
+  font-size: 25px;
+  font-weight: 600;
+  position: relative;
+  bottom: 25px;
+  letter-spacing: 0px;
+  word-spacing: small;
+}
+.list .item {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px 0px 0px;
+}
+.list {
+  float: left;
+  display: flex;
+}
+.list button {
+  max-width: 240px;
+  max-height: 200px;
+  border: 1px;
+}
+.list .item img {
+  max-width: 240px;
+  max-height: 200px;
+  border: 1px;  
+  border-color: none;
+}
+.list .item .href {
+  display: flex;
+  padding:15px 5px 5px 0px;
+  color: lightgray;
+}
+.list .item .href a {
+  color: gray;
+  text-decoration: none;
+  font-size: 15px;
+}
+.list .name {
+  font-size: 17px;
+  font-weight: 580;
+}
+.list .item .href p {
+  padding: 0px 5px;
+}
+.list .item .href a:hover {
+  text-decoration: underline;
+}
+.list .item .percentage {
+  color: red;
+  padding:10px 0px;
+  font-weight: 600;
+}
+.notable2 {
+  position: absolute;
+  top: 900px;
+  left: 350px;
+}
+
+.notable2 .item {
+  padding: 30px 10px 0px 0px;
+}
+
+.MainArticle{
+  width: 769px;
+  margin: 30px 30px 20px 370px;
+}
+
+.Slide{
+  margin-bottom: 45px;
+  margin: 0px auto;
+  display: flex;
+}
+
+.PhotoSlide{
+  width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0px;
+}
+
+.TextSlideWrapper{
+  display: flex;
+  width: 306px;
+  align-items: flex-start;
+  position: relative;
+  background: rgb(53, 86, 151);
+  flex-wrap: wrap;
+}
+
+.TextSlide{
+  display: flex;
+  height: auto;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.TextBox{
+  height: 146px;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.SlideMainText{
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 12px;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.SlideSubText{
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  white-space: normal;
+
+}
+
+.SlideNavigation{
+  display: flex;
+  align-items: center;
+}
+
+.LeftButton{
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0);
+  position: static;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.RightButton{
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0);
+  position: static;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.PageIndex{
+  min-width: 42px;
+  position: static;
+  font-size: 11px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 13px;
+  right: 16px;
+  height: 20px;
+  border-radius: 11px;
+  background: rgba(13, 13, 13, 0.2);
+  color: rgb(255, 255, 255);
+}
+
+
+.popular {
+  position: relative;
+  bottom: 300px;
+  right: 30px;
+  float: right;
+  width: 300px;
+  height: 900px;
+  padding-right: 150px;
+}
+.popular .title {
+  display: flex;
+  justify-content: space-between;
+}
+.popular .title .project {
+  font-size: 25px;
+  font-weight: bolder;
+  padding-bottom: 8px;
+}
+.popular .title .project a {
+  text-decoration: none;
+  color: black ;
+}
+.popular .title .all a {
+  text-decoration: none;
+  color: gray;
+  font-size: 15px;
+}
+
+.Clock{
+  color: grey;
+}
+.list2 {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.popular .list2 .item2 {
+  display: flex;
+  padding-bottom: 15px;
+}
+.popular .title .project {
+  font-size: 20px;
+}
+.list2 .item2 .img2 img {
+  max-width: 122px;
+  max-height: 120px;
+  
+}
+.list2 .item2 .number {
+  color: red;
+  font-weight: 600;
+}
+.list2 .item2 button {
+  width: 150px;
+  height: 100px;
+  background-color: white;
+  border-color: white;
+}
+.list2 .item2 .percentage {
+  color: red;
+  font-weight: 600;
+}
+.list2 .item2 .text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 12px;
+}
+.list2 .item2 .number {
+  font-size: 20px;
+  padding: 0px 20px;
+}
+.list2 .item2 .text .href {
+  display: flex;
+}
+.list2 .item2 .href p {
+  padding: 0px 5px;
+}
+.list2 .item2 .href a {
+  color: gray;
+  text-decoration: none;
+  font-size: 7px;
+}
+.list2 .name {
+  font-size: 15px;
+}
+.list2 .item2 .percentage {
+  color: red;
+  padding:5px 0px ;
+}
+.list2 .item2 .text .href a:hover {
+  text-decoration: underline;
+}
+
+footer {
+    background-color: rgb(214, 211, 211);
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+
+   justify-content: center;
+  box-shadow: rgb(0 0 0 / 100%) 0px 1px 1px;
+   
+}
+
+.FooterWrapper {
+  background-color: white;
+  width: 100%;
+  height: 440px;
+  box-shadow: rgb(214 211 211/ 100%)  0px 0px 0px 1px; 
+}
+
+.FooterWrapper2 {
+  background-color: white;
+  width: 100%;
+  height: 300px;
+  box-shadow: rgb(214 211 211/ 100%)  0px 0px 0px 1px; 
+}
+
+.FW3 {
+  background-color: white;
+  margin-bottom: 200;
+  width: 60%;
+  height: 300px;
+}
+
+.FW3_2 {
+  background-color: white;
+  margin-bottom: 200;
+  width: 80%;
+  height: 300px;
+}
+.FW3_3 {
+  background-color: white;
+  margin-bottom: 200;
+  width: 60%;
+  height: 300px;
+}
+.FW3_4 {
+  background-color: white;
+  margin-bottom: 200;
+  width: 60%;
+  height: 300px;
+}
+
+.FWCaution {
+  background-color: white;
+  width: 100%;
+  height: 500px;
+}
+
+.Caution {
+  font-size: 10px;
+  display: flex;
+  width: 100%;
+  bottom: 0%;
+  position: relative;
+  height: auto;
+  font-size: 12px;
+  line-height: 18px;
+}
+footer .underVar{
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  background-color: blue;
+}
